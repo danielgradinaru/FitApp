@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --bg-dark: #050505;
+  --bg-panel: #111116;
+  --neon-cyan: #00f3ff;
+  --neon-purple: #bc13fe;
+  --neon-green: #0aff0a;
+  --text-main: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, button {
+  font-family: 'Orbitron', sans-serif; /* Font futuristic */
+}
+
+/* Utilitare Cyberpunk */
+.cyber-card {
+  background: rgba(17, 17, 22, 0.8);
+  border: 1px solid #333;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.cyber-input {
+  background: #0a0a0f;
+  border: 1px solid #333;
+  color: var(--neon-cyan);
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.cyber-input:focus {
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 10px rgba(188, 19, 254, 0.3);
+}
+
+.cyber-btn {
+  background: transparent;
+  border: 2px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-btn:hover {
+  background: var(--neon-cyan);
+  color: #000;
+  box-shadow: 0 0 25px var(--neon-cyan);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px currentColor;
+}

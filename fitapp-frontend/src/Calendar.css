@@ -1,0 +1,115 @@
+/* src/Calendar.css */
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: rgba(17, 17, 22, 0.9);
+  border: 1px solid var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.125em;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+  padding: 20px;
+  color: #fff;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Navigare (Luni/Ani) */
+.react-calendar__navigation button {
+  color: var(--neon-cyan);
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: rgba(0, 243, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Zilele Saptamanii */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Zilele */
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 15px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #222;
+  color: var(--neon-cyan);
+}
+
+/* Zile selectate / Azi */
+.react-calendar__tile--now {
+  background: rgba(188, 19, 254, 0.2);
+  border: 1px solid var(--neon-purple);
+  color: var(--neon-purple);
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: rgba(188, 19, 254, 0.4);
+}
+
+/* --- INDICATORII PENTRU ANTRENAMENTE --- */
+.workout-day {
+  position: relative;
+  background: rgba(0, 255, 153, 0.1) !important;
+  border: 1px solid #00ff99 !important;
+  color: #00ff99 !important;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+}
+
+.workout-day::after {
+  content: '✓';
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  font-size: 10px;
+}
